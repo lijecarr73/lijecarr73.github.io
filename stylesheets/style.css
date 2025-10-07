@@ -182,7 +182,7 @@ body {
 }
 .scrollable-infobox iframe, .scrollable-infobox video {
     float: left;
-    width: 30%;
+    height: 75%;
     margin: 5px;
     background-color: #c0c0c0;
     border: 8px solid;

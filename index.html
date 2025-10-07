@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>DJ Sl1pz</title>
+        <link rel="stylesheet" href="stylesheets/style.css"/>
+    </head>
+    <body>
+        <div class="centre-box">
+            <div class="title"><div class="heading-bootstrap">
+                    <h1>sl1pz</h1></div>
+                <p id="randtext"></p>
+                <script>
+                    const text = [
+                        "Guy Who Makes Music, Occasionally",
+                        "Didn't Invent Dubstep, but I'm Sure Good At It",
+                        "It's Pronounced \"Slips\"",
+                        "Yes, <i>That</i> Sl1pz",
+                        "Sound Design Eludes Him",
+                        "Enjoys Hitting the Refresh Button",
+                        "As Canadian As Ever",
+                        "He Likes Hardstyle a Bit",
+                        "You're His 1000th Customer",
+                        "Sl2pz",
+                        "But Notably Doesn't Fall",
+                        "As Seen On Spotify",
+                        "Coming Soon to Probably Nowhere",
+                        "And By \"Sl1pz\", Well, Let's Just Say, The Producer",
+                        "Misses Adobe Flash",
+                        "Doesn't Do Bar Mitzvahs",
+                        "Does Bar Mitzvahs",
+                        "Too Cool for Subtitles",
+                        "Makes Funny Steam Names",
+                        "Now In Your Internet Browser",
+                        "Help, I'm Stuck In A Webpage",
+                        "Legendary Creature - Human Musician",
+                        "Really Excited To Be Here",
+                        "His Mind Is An Enigma",
+                        "His Girlfriend Says He's Attractive",
+                        ];
+                    const randomIndex = Math.floor(Math.random() * text.length);
+                    const selec = text[randomIndex];
+                    document.getElementById("randtext").innerHTML = selec;
+                </script>
+            </div>
+            <div class="columns">
+                <div class="column left-column">
+                    <h2>About Me</h2>
+                    <p>I'm a producer from BC, Canada who's had a passion for making music as long as I can remember.</p>
+                    <p>I first got into production when my parents got me FL Studio at the age of 12, though I'd been messing around in GarageBand for at least a couple years by that point. I wanted to make songs just like my favourite dubstep musician at the time: Xtrullor (if you don't know who that is, <a href="xtrullor.newgrounds.com">go check him out on Newgrounds</a>).</p>
+                    <p>Though I started making dubstep, my style evolved over time, and I started making hardcore techno, hard dance, and most recently idol pop, as well as composing orchestral and concert band pieces from time to time. </p>
+                    <div class="horizontal-line"></div>
+                    <h2>Where To Find My Songs</h2>
+                    <p>Most of the songs I post end up going on my Newgrounds page, and I'm on most major streaming services as well. Newgrounds is probably the best place to listen to my newer music.</p>
+                    <p>If you want to listen to a track I've collaborated on that I'm not listed as an artist on, I'll probably put an archive of my collaborations somewhere on this site in the future.</p>
+                    <div class="horizontal-line"></div>
+                    <p>Here are my social media and other links:</p>
+                    <div class="social-media-links">
+                        <a class="instagram" href="https://instagram.com/djsl1pz">
+                            <img src="../images/instagram.png">
+                        </a>
+                        <a class="newgrounds" href="https://sl1pz.newgrounds.com">
+                            <img src="../images/newgrounds.png">
+                        </a>
+                        <a class="spotify" href="https://open.spotify.com/artist/7Jl6nT72hcAAu6smppGLuA">
+                            <img src="../images/spotify.png">
+                        </a>
+                        <a class="apple-music" href="https://music.apple.com/us/artist/sl1pz/1546103226">
+                            <img src="../images/apple-music.png">
+                        </a>
+                        <a class="gmail" href="mailto:djsl1pz.hc@gmail.com">
+                            <img src="../images/gmail.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="column right-column">
+                    <h2>Commission Pricing</h2>
+                    <p>At the moment my commission prices aren't super rigid, but if you'd like to commission a piece, feel free to shoot me a message on Instagram or my business e-mail at djsl1pz.hc@gmail.com and we can discuss the details.
+                    <p>In the meantime, feel free to scroll down so you get an idea what it is you'll be looking at.
+                    <div class="horizontal-line"></div>
+                    <h2>Originals and Remixes</h2>
+                    <div class="carousel" id="mySongs">
+                        <script>
+                            const carousel = document.getElementById('mySongs');
+                            if (carousel) {
+                                carousel.addEventListener('wheel', (event) => {
+
+                                    /* carousel.scrollBy({
+                                        left: event.deltaY < 0 ? -30 : 30,
+                                    });*/
+                                    
+                                    const videos = document.querySelectorAll('video');
+                                    videos.forEach(video => {
+                                        video.pause();
+                                    });
+                                });
+                            }
+                        </script>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <video src="../videos/Psellism.mp4" controls>normally there would be a video here</video>
+                                <h3>Psellism</h3>
+                                <p>
+                                I made this track a fairly long time ago based off of the album art, itself a drawing by a YouTube animator named Atlas Crossman of a character Dillon from their series <i>Boku no Akuma</i>. While a big deviation from my (mostly unreleased) style at the time, it was a very fun track to make.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <video src="../videos/kiss me again remix.mp4" controls>normally there would be a video here</video>
+                                <h3>Kiss Me Again (Sl1pz Remix)</h3>
+                                <p>
+                                Cover art by spookynya. I really like the original of this song, so I decided to remix it one day and came up with this. I quite enjoy how it turned out, especially the kick in the video, since I'd never designed one like that before.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <h3>Risukami</h3>
+                                <p>
+                                <video src="../videos/risukami.mp4" controls>normally there would be a video here</video>
+                                I would be remiss if I didn't pay homage to <i>Nyan~ Neko Sugar Girls</i>, a YouTube animated series about a couple of neko girls, one of whom was drawn on the cover by spookynya. I watched the series first in band camp when I was 14 and it's changed the trajectory of my life more than I ever thought it would. Something something brostep banger.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <h2>Collaborations</h2>
+                    <div class="carousel" id="collaborations">
+                        <script>
+                            const carousel = document.getElementById('collaborations');
+                            if (carousel) {
+                                carousel.addEventListener('wheel', (event) => {
+
+                                    /* carousel.scrollBy({
+                                        left: event.deltaY < 0 ? -30 : 30,
+                                    });*/
+                                    
+                                    const videos = document.querySelectorAll('video');
+                                    videos.forEach(video => {
+                                        video.pause();
+                                    });
+                                });
+                            }
+                        </script>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <video src="../videos/lowa.mp4" controls>normally there would be a video here</video>
+                                <h3>Phantasmagoria</h3>
+                                <h4>Featured song: Love is War</h4>
+                                <p>Phantasmagoria, in addition to being crazy talented, represent my first foray into idol pop music. This song was one of five demos that we recorded for an animation challenge I provided songs for. Phantasmagoria, or Phasma for short, have since welcomed me aboard as a member of their team, and they can be found in the links below.</p>
+                                <div class="horizontal-line"></div>
+                                <div class="social-media-links">
+                                    <a class="instagram" href="https://instagram.com/phasma_idols">
+                                        <img src="../images/instagram.png">
+                                    </a>
+                                    <a class="spotify" href="https://open.spotify.com/artist/2C8zGlwYJbwq28ycXfOZLv">
+                                        <img src="../images/spotify.png">
+                                    </a>
+                                    <a class="apple-music" href="https://music.apple.com/us/artist/sl1pz/1546103226">
+                                        <img src="../images/apple-music.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <video src="../videos/moxwald.mp4" controls>normally there would be a video here</video>
+                                <h3>Lake Boys</h3>
+                                <h4>Featured song: theyallgotmewrong</h4>
+                                <p>In high school, me and my friend got together as Hammy Double G and Sl1pz and started work on a rap project. Most of our songs weren't very good, but as we grew we learned how to make music that was and it sounds like this. With me as the producer, the Lake Boys make a variety of styles from meme rap to hyperpop and everything in between. This song in particular has album art by spookynya. Here are our social media.</p>
+                                <div class="horizontal-line"></div>
+                                <div class="social-media-links">
+                                    <a class="instagram" href="https://instagram.com/officiallakeboys">
+                                        <img src="../images/instagram.png">
+                                    </a>
+                                    <a class="spotify" href="https://open.spotify.com/artist/2C8zGlwYJbwq28ycXfOZLv">
+                                        <img src="../images/spotify.png">
+                                    </a>
+                                    <a class="apple-music" href="https://music.apple.com/us/artist/sl1pz/1546103226">
+                                        <img src="../images/apple-music.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="scrollable-infobox">
+                                <h3>And you, if you want!</h3>
+                                <p>As I said on the top of this half of the page, I am open for commissions of any kind! If you have an idea, don't hesitate to e-mail or message me and we can get something moving.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-notice">
+            <p>"Unlockstep" font made by u/GlitchyPSI on Reddit.</p>
+            <p>Almost all videos created with ZGameEditor visualizer.</p>
+            <p>Website &copy; 2025 Sl1pz. All rights reserved.</p>
+        </div>
+    </body>
+</html>

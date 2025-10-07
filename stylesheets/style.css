@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    font-family: 'verdana';
+    height: 100%;
+    background: linear-gradient(to bottom, #000044, #004444, #004400);
+    scrollable: false;
+}
+
+
+@font-face {
+    font-family: 'unlockstep';
+    src: url('../fonts/unlockstep.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'verdana';
+    src: url('../fonts/verdana.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'oglogo';
+    src: url('../fonts/oglogo.ttf') format('truetype');
+}
+
+.centre-box {
+    background: #c0c0c0;
+    float: center;
+    width: 80vw;
+    min-width: 800px;
+    height: 80vh;
+    min-height: 450px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: auto;
+    border: 8px solid black;
+    border-image-source: url('../images/border.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+}
+
+.centre-box .title {
+    color: white;
+    font-family: 'unlockstep';
+    letter-spacing: 0.125em;
+    background: #3f3f3f;
+    border: 8px solid black;
+    border-image-source: url('../images/negative.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+}
+
+.centre-box .title h1 {
+    color: transparent;
+    background-image: linear-gradient(to bottom, #3333ff, #33ffff, #33ff33);
+    background-clip: text;
+    font-weight: normal;
+    font-size: 56;
+    margin-bottom: -20px;
+    margin-top: 5px;
+    font-family: 'oglogo';
+}
+.centre-box .title .heading-bootstrap {
+}
+
+.centre-box .columns {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    height: 80%;
+}
+.left-column {
+    float: left;
+} .right-column {
+    float: right;
+}
+.column {
+    width: 50%;
+    border: 8px solid black;
+    border-image-source: url('../images/negative2.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+.column p {
+    font-size: 12;
+}
+.column h2 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-image: linear-gradient(to bottom, #000077, #007777, #007700);
+    background-clip: text;
+    color: transparent;
+
+}
+.horizontal-line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: #777777;
+    border-bottom: 1px solid #b0b0b0; 
+}
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: #777777;
+    border-right: 1px solid #b0b0b0; 
+}
+.copyright-notice {
+    position: absolute;
+    text-align: right;
+    bottom: 0vh;
+    right: 0vw;
+    line-height: 0;
+    padding: 5px;
+    font-size: 8px;
+    color: #00ff00;
+}
+.social-media-links {
+    display: flex;
+    overflow: scroll;
+    align: center;
+    float: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.social-media-links img:hover {
+    transform: translateY(-5px);
+}
+.social-media-links img {
+    padding: 5px;
+}
+
+.carousel {
+    height: 40%;
+    width: auto;
+    padding: 5px;
+    display: flex;
+    flex-grow: horizontal;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.carousel-slide {
+    border: 8px solid;
+    border-image: url("../images/negative.png") 32 stretch;
+    background-color: #404040;
+    color: white;
+    padding: 5px;
+    height: calc(100%-13px);
+    width: calc(100% - 52px);
+    margin-left: 20px;
+    margin-right: 20px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    font-size: 12;
+    display: flex;
+}
+.scrollable-infobox iframe, .scrollable-infobox video {
+    float: left;
+    max-width: 30%;
+    margin: 5px;
+    background-color: #c0c0c0;
+    border: 8px solid;
+    border-image: url("../images/border.png") 32 stretch;
+}
+
+
+.carousel-slide p {
+    font-size: 12;
+}
+
+.column h3 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: -10;
+
+    background-image: linear-gradient(to bottom, #7777ff, #77ffff, #77ff77);
+    background-clip: text;
+    color: transparent;
+}
+.column h4 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-top: 10;
+    margin-bottom: -10;
+    color: white;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-infobox {
+    overflow: scroll;
+}
+.scrollable-infobox::-webkit-scrollbar {
+    display: none;
+}
+.social-media-links::-webkit-scrollbar {
+    display: none;
+}
+
+

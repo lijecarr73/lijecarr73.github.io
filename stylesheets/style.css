@@ -153,9 +153,13 @@ body {
     padding: 5px;
 }
 
+@media screen and (max-width: 767px) {
+    .carousel {
+        max-height: 100px;
+    }
+}
 .carousel {
     height: 40%;
-    max-height: 200px;
     width: auto;
     padding: 5px;
     display: flex;

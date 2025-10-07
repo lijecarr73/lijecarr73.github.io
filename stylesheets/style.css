@@ -78,10 +78,24 @@ body {
     gap: 5px;
     height: 80%;
 }
-.left-column {
-    float: left;
-} .right-column {
-    float: right;
+
+@media only screen and (max-width: 600px) {
+    .left-column {
+        float: left;
+    } 
+    .right-column {
+        float: right;
+    }
+    .vertical-line {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 1px;
+        background-color: #777777;
+        border-bottom: 1px solid #b0b0b0; 
+    }
 }
 .column {
     width: 50%;
@@ -153,9 +167,9 @@ body {
     padding: 5px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
     .carousel {
-        max-height: 100px;
+        max-height: 200px;
     }
 }
 .carousel {
@@ -186,7 +200,8 @@ body {
 }
 .scrollable-infobox iframe, .scrollable-infobox video {
     float: left;
-    height: 75%;
+    max-width: 40%;
+    max-height: 50%;
     margin: 5px;
     background-color: #c0c0c0;
     border: 8px solid;

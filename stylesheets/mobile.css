@@ -1,0 +1,235 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    font-family: 'verdana';
+    height: 100%;
+    background: linear-gradient(to bottom, #000044, #004444, #004400);
+    scrollable: false;
+}
+
+
+@font-face {
+    font-family: 'unlockstep';
+    src: url('../fonts/unlockstep.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'verdana';
+    src: url('../fonts/verdana.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'oglogo';
+    src: url('../fonts/oglogo.ttf') format('truetype');
+}
+
+.centre-box {
+    background: #c0c0c0;
+    float: center;
+    width: 80vw;
+    min-width: 800px;
+    max-width: 1200px;
+    height: 80vh;
+    min-height: 450px;
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    margin: auto;
+    overflow: scroll;
+    border: 16px solid black;
+    border-image-source: url('../images/border.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+}
+
+.centre-box .title {
+    color: white;
+    font-family: 'unlockstep';
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    background: #3f3f3f;
+    border: 16px solid black;
+    border-image-source: url('../images/negative.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+    text-align: center;
+    height: auto;
+    padding: 1em;
+}
+
+.centre-box .title h1 {
+    color: transparent;
+    background-image: linear-gradient(to bottom, #3333ff, #33ffff, #33ff33);
+    background-clip: text;
+    font-weight: normal;
+    font-size: 3.5em;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    font-family: 'oglogo';
+}
+.centre-box .title .heading-bootstrap {
+}
+
+.centre-box .columns {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
+    height: 80%;
+}
+
+.column {
+    border: 16px solid black;
+    border-image-source: url('../images/negative2.png');
+    border-image-slice: 32;
+    border-image-repeat: stretch;
+    padding: 0.5em;
+}
+
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+.column p {
+    font-size: 1.5em;
+}
+.column h2 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-image: linear-gradient(to bottom, #000077, #007777, #007700);
+    background-clip: text;
+    color: transparent;
+
+}
+.horizontal-line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    height: 2px;
+    background-color: #777777;
+    border-bottom: 2px solid #b0b0b0; 
+}
+.vertical-line {
+    height: 100%;
+    width: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    background-color: #777777;
+    border-right: 2px solid #b0b0b0; 
+}
+.copyright-notice {
+    position: absolute;
+    text-align: right;
+    bottom: 0vh;
+    right: 0vw;
+    line-height: 0;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #00ff00;
+}
+.social-media-links {
+    display: flex;
+    overflow: scroll;
+    align: center;
+    float: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.social-media-links img:hover {
+    transform: translateY(-0.5em);
+}
+.social-media-links img {
+    padding: 0.5em;
+}
+
+.carousel {
+    max-height: 30em;
+    width: auto;
+    padding: 0.5em;
+    display: flex;
+    flex-grow: horizontal;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.carousel-slide {
+    border: 16px solid;
+    border-image: url("../images/negative.png") 32 stretch;
+    background-color: #404040;
+    color: white;
+    padding: 0.5em;
+    height: calc(100%-13px);
+    width: calc(100% - 52px);
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    font-size: 1.5em;
+    display: flex;
+}
+.scrollable-infobox iframe, .scrollable-infobox video {
+    float: left;
+    max-width: 40%;
+    max-height: 50%;
+    margin: 0.5em;
+    background-color: #c0c0c0;
+    border: 16px solid;
+    border-image: url("../images/border.png") 32 stretch;
+}
+
+
+.carousel-slide p {
+    font-size: 1em;
+}
+
+.column h3 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: -10;
+
+    background-image: linear-gradient(to bottom, #7777ff, #77ffff, #77ff77);
+    background-clip: text;
+    color: transparent;
+}
+.column h4 {
+    line-height: 1.2;
+    font-family: "unlockstep";
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-top: 10;
+    margin-bottom: -10;
+    color: white;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-infobox {
+    overflow: scroll;
+}
+.scrollable-infobox::-webkit-scrollbar {
+    display: none;
+}
+.social-media-links::-webkit-scrollbar {
+    display: none;
+}
+
+

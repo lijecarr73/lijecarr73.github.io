@@ -2,6 +2,15 @@
     <head>
         <title>DJ Sl1pz</title>
         <link rel="stylesheet" href="stylesheets/style.css"/>
+        <script>
+            function isMobileUserAgent() {
+                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+            }
+            if (isMobileUserAgent()) {
+                window.location.href = "mobile.html";
+            }
+        </script>
     </head>
     <body>
         <div class="centre-box">
@@ -124,9 +133,9 @@
                     <h2>Collaborations</h2>
                     <div class="carousel" id="collaborations">
                         <script>
-                            const carousel = document.getElementById('collaborations');
-                            if (carousel) {
-                                carousel.addEventListener('wheel', (event) => {
+                            const carouse2 = document.getElementById('collaborations');
+                            if (carouse2) {
+                                carouse2.addEventListener('wheel', (event) => {
 
                                     /* carousel.scrollBy({
                                         left: event.deltaY < 0 ? -30 : 30,

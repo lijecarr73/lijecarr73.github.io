@@ -32,13 +32,14 @@ body {
     float: center;
     width: 80vw;
     min-width: 800px;
+    max-width: 1200px;
     height: 80vh;
     min-height: 450px;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
     margin: auto;
-    border: 8px solid black;
+    border: 0.5em solid black;
     border-image-source: url('../images/border.png');
     border-image-slice: 32;
     border-image-repeat: stretch;
@@ -49,13 +50,13 @@ body {
     font-family: 'unlockstep';
     letter-spacing: 0.125em;
     background: #3f3f3f;
-    border: 8px solid black;
+    border: 0.5em solid black;
     border-image-source: url('../images/negative.png');
     border-image-slice: 32;
     border-image-repeat: stretch;
     text-align: center;
     height: auto;
-    padding: 10px;
+    padding: 0.5em;
 }
 
 .centre-box .title h1 {
@@ -63,47 +64,29 @@ body {
     background-image: linear-gradient(to bottom, #3333ff, #33ffff, #33ff33);
     background-clip: text;
     font-weight: normal;
-    font-size: 56;
-    margin-bottom: -20px;
-    margin-top: 5px;
+    font-size: 3.5em;
+    margin-bottom: -0.25em;
+    margin-top: 0.25em;
     font-family: 'oglogo';
 }
 .centre-box .title .heading-bootstrap {
 }
 
 .centre-box .columns {
-    padding: 5px;
+    padding: 0.25em;
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 0.25em;
     height: 80%;
 }
 
-@media only screen and (max-width: 600px) {
-    .left-column {
-        float: left;
-    } 
-    .right-column {
-        float: right;
-    }
-    .vertical-line {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        height: 1px;
-        background-color: #777777;
-        border-bottom: 1px solid #b0b0b0; 
-    }
-}
 .column {
     width: 50%;
-    border: 8px solid black;
+    border: 0.5em solid black;
     border-image-source: url('../images/negative2.png');
     border-image-slice: 32;
     border-image-repeat: stretch;
-    padding: 5px;
+    padding: 0.25em;
     overflow: scroll;
 }
 
@@ -112,7 +95,7 @@ body {
 }
 
 .column p {
-    font-size: 12;
+    font-size: 0.75em;
 }
 .column h2 {
     line-height: 1.2;
@@ -130,17 +113,17 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 1px;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    height: 0.0625em;
     background-color: #777777;
-    border-bottom: 1px solid #b0b0b0; 
+    border-bottom: 0.0625em solid #b0b0b0; 
 }
 .vertical-line {
     height: 100%;
-    width: 1px;
+    width: 0.0625em;
     background-color: #777777;
-    border-right: 1px solid #b0b0b0; 
+    border-right: 0.0625em solid #b0b0b0; 
 }
 .copyright-notice {
     position: absolute;
@@ -148,8 +131,8 @@ body {
     bottom: 0vh;
     right: 0vw;
     line-height: 0;
-    padding: 5px;
-    font-size: 8px;
+    padding: 0.25em;
+    font-size: 0.5em;
     color: #00ff00;
 }
 .social-media-links {
@@ -161,21 +144,16 @@ body {
     justify-content: space-between;
 }
 .social-media-links img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.25em);
 }
 .social-media-links img {
-    padding: 5px;
+    padding: 0.25em;
 }
 
-@media screen and (min-width: 767px) {
-    .carousel {
-        max-height: 200px;
-    }
-}
 .carousel {
-    height: 40%;
+    max-height: 15em;
     width: auto;
-    padding: 5px;
+    padding: 0.25em;
     display: flex;
     flex-grow: horizontal;
     justify-content: space-between;
@@ -184,33 +162,33 @@ body {
     scroll-behavior: smooth;
 }
 .carousel-slide {
-    border: 8px solid;
+    border: 0.5em solid;
     border-image: url("../images/negative.png") 32 stretch;
     background-color: #404040;
     color: white;
-    padding: 5px;
+    padding: 0.25em;
     height: calc(100%-13px);
     width: calc(100% - 52px);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
     scroll-snap-align: center;
     flex-shrink: 0;
-    font-size: 12;
+    font-size: 0.75em;
     display: flex;
 }
 .scrollable-infobox iframe, .scrollable-infobox video {
     float: left;
     max-width: 40%;
     max-height: 50%;
-    margin: 5px;
+    margin: 0.25em;
     background-color: #c0c0c0;
-    border: 8px solid;
+    border: 0.5em solid;
     border-image: url("../images/border.png") 32 stretch;
 }
 
 
 .carousel-slide p {
-    font-size: 12;
+    font-size: 1em;
 }
 
 .column h3 {

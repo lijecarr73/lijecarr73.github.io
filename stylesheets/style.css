@@ -175,11 +175,12 @@ body {
     flex-shrink: 0;
     font-size: 0.75em;
     display: flex;
+    justify-content: space-around;
 }
 .scrollable-infobox iframe, .scrollable-infobox video {
     float: left;
-    max-width: 40%;
-    max-height: 50%;
+    max-width: 9em;
+    max-height: 9em;
     margin: 0.25em;
     background-color: #c0c0c0;
     border: 0.5em solid;
@@ -218,6 +219,7 @@ body {
 
 .scrollable-infobox {
     overflow: scroll;
+    padding: auto;
 }
 .scrollable-infobox::-webkit-scrollbar {
     display: none;

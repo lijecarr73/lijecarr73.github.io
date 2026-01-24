@@ -147,13 +147,15 @@ body {
     align: center;
     float: center;
     width: 100%;
+    height: 9em;
     justify-content: space-between;
 }
-.social-media-links img:hover {
+.social-media-links a img:hover {
     transform: translateY(-0.5em);
 }
-.social-media-links img {
+.social-media-links a img {
     padding: 0.5em;
+    height: 80%;
 }
 
 .carousel {

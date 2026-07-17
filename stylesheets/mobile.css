@@ -7,7 +7,8 @@ body {
     display: flex;
     font-family: 'verdana';
     height: 100%;
-    background: linear-gradient(to bottom, #000044, #004444, #004400);
+    /* background: linear-gradient(to bottom, #000044, #004444, #004400); */
+    background: linear-gradient(to bottom, #aa555f, #aa557f, #aa559f);
     scrollable: false;
 }
 
@@ -63,7 +64,8 @@ body {
 
 .centre-box .title h1 {
     color: transparent;
-    background-image: linear-gradient(to bottom, #3333ff, #33ffff, #33ff33);
+    /*background-image: linear-gradient(to bottom, #3333ff, #33ffff, #33ff33);*/
+    background-image: linear-gradient(to bottom, #ff5555, #ff55bb, #ff55ff);
     background-clip: text;
     font-weight: normal;
     font-size: 3.5em;
@@ -106,7 +108,8 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 
-    background-image: linear-gradient(to bottom, #000077, #007777, #007700);
+    /*background-image: linear-gradient(to bottom, #000077, #007777, #007700);*/
+    background-image: linear-gradient(to bottom, #772f2f, #772f5c, #772f77);
     background-clip: text;
     color: transparent;
 
@@ -206,7 +209,8 @@ body {
     margin-top: 0;
     margin-bottom: -10;
 
-    background-image: linear-gradient(to bottom, #7777ff, #77ffff, #77ff77);
+    /*background-image: linear-gradient(to bottom, #7777ff, #77ffff, #77ff77);*/
+    background-image: linear-gradient(to bottom, #ff8888, #ff88cc, #ff88ff);
     background-clip: text;
     color: transparent;
 }
